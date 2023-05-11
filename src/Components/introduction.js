@@ -1,13 +1,21 @@
 import React from "react"
+import Gaurav from "./Images/Gaurav.webp"
 
 function Introduction() {
     return (
         <div class="intro">
-            <div class="text_container">
-                <h1>Hi! I'm Gaurav Sharma!</h1>
-            </div>
+            <div class="inner_intro">
+                <div class="intro_text_container">
+                    <h2>
+                        Hi, I'm Gaurav Sharma
+                        <br></br>
+                        Welcome to my website!
+                    </h2>
+                </div>
 
-            <div class="image_container">
+                <div class="intro_img_container">
+                    <img src={Gaurav} alt="Gaurav Img" />
+                </div>
             </div>
         </div >
     )
