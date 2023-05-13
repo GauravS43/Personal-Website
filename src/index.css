@@ -1,25 +1,74 @@
 /*Importing Jost, Oswald fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@500&display=swap');
 
-/*Colours: https://lospec.com/palette-list/nostalgic-memories */
+/*Colours: https://lospec.com/palette-list/ayy4*/
 
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  color: white;
 }
 
 body {
-  background-color: #4c4961;
+  background-color: #f1f2da;
 }
 
 .wrapper {
   position: absolute;
   width: 100%;
   overflow: hidden;
-  background: url(Components/Images/sq.png) center center repeat;
+}
+
+/*----------------- ANIMATION SECTION -----------------*/
+
+.animation {
+  opacity: 0;
+}
+
+.animateUP {
+  animation: goingUp 1.5s forwards;
+}
+
+.animateLEFT {
+  animation: goingLeft 1.5s forwards;
+}
+
+.animateRIGHT {
+  animation: goingRight 1.5s forwards;
+}
+
+@keyframes goingUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes goingLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes goingRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /*----------------- HEADER SECTION -----------------*/
@@ -27,7 +76,10 @@ body {
   width: 100%;
   height: 10vh;
   display: block;
-  background-color: #4c4961;
+  background-color: #00303b;
+  position: fixed;
+  color: white;
+  z-index: 2;
 }
 
 .inner_header {
@@ -71,23 +123,32 @@ body {
 }
 
 /*----------------- INTRODUCTION SECTION -----------------*/
+
 .intro {
   width: 100%;
-  height: 90vh;
+  margin-top: 10vh;
+  height: 91vh;
   display: block;
   font-family: 'Jost', sans-serif;
 }
 
 .inner_intro {
   width: 80%;
-  height: 100%;
+  height: 88%;
   display: flex;
   margin: 0 auto;
 }
 
+.intro_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
 .intro_text_container {
-  height: 100%;
-  width: 50%;
+  height: 25%;
+  width: 100%;
   display: table;
 }
 
@@ -97,6 +158,27 @@ body {
   vertical-align: middle;
   font-size: 320%;
   font-weight: 500;
+  color: #00303b;
+}
+
+.link_container {
+  margin-top: 2%;
+  display: flex;
+}
+
+.link_container a {
+  font-size: 200%;
+  margin: auto;
+  color: white;
+  background-color: #00303b;
+  width: 30%;
+  text-align: center;
+  border-radius: 30px;
+  transition: 0.25s ease;
+}
+
+.link_container :hover {
+  background-color: #ff7777;
 }
 
 .intro_img_container {
@@ -111,22 +193,192 @@ body {
   max-width: 60%;
   height: auto;
   border-radius: 50%;
-  border: 20px solid #4c4961;
-  ;
+  border: 20px solid #00303b;
+}
+
+/*----------------- SCROLL SECTION -----------------*/
+
+.scroll {
+  color: #00303b;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s ease;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.scroll h3 {
+  font-family: 'Jost', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+
+.scroll span {
+  margin-top: 2%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -0.8%;
+  border-left: 2px solid #00303b;
+  border-bottom: 2px solid #00303b;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: scrollDown 1.5s infinite;
+  animation: scrollDown 1.5s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes scrollDown {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
 }
 
 /*----------------- FEATURED PROJECT SECTION -----------------*/
 
 .f_proj {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   font-family: 'Jost', sans-serif;
+  color: #00303b;
 }
 
-.f_proj h2 {
+.inner_f_proj {
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  border-radius: 50px;
+  background-color: white;
+  display: block;
+}
+
+.inner_f_proj h2 {
   width: 100%;
-  font-size: 300%;
+  font-size: 240%;
   font-weight: 400;
   padding-top: 2%;
   text-align: center;
+}
+
+.f_proj_left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f_proj_left img {
+  border-radius: 20px;
+  width: 84%;
+  border: 10px solid #ffce96;
+}
+
+.f_proj_right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.f_proj_text_container {
+  width: 90%;
+  margin-bottom: 4%;
+}
+
+.f_proj_right h3 {
+  text-align: justify;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+}
+
+/*----------------- RECENT BLOG SECTION -----------------*/
+
+.r_blog {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.r_blog h2 {
+  background-color: white;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  width: 30%;
+  font-size: 240%;
+  font-weight: 400;
+  color: #00303b;
+  border-radius: 20px;
+}
+
+.inner_r_blog {
+  width: 100%;
+  height: 80%;
+  margin-top: 4%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.blog_post {
+  display: inline-block;
+  height: 90%;
+  width: 40%;
+  background-color: white;
+  border-radius: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.blog_post h3 {
+  padding-top: 2%;
+  width: 100%;
+  font-family: 'Jost', sans-serif;
+  font-size: 160%;
+  font-weight: 400;
+  color: #00303b;
+  text-align: center;
+}
+
+.blog_post h4 {
+  width: 90%;
+  height: 80%;
+  padding: 5%;
+  padding-top: 0%;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 120%;
+  color: #00303b;
+  white-space: pre-wrap;
 }
