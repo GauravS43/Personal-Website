@@ -3,8 +3,8 @@ import './index.css';
 import { Header } from './Components/header.js';
 import { Introduction } from './Components/introduction.js'
 import { FeaturedProject } from './Components/featured_project';
-import { RecentBlog } from './recent_posts';
-
+import { RecentBlog } from './Components/recent_posts';
+import { Footer } from './Components/footer';
 
 //Animation based on scroll
 window.addEventListener('load', (event) => {
@@ -31,17 +31,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div class="wrapper">
     < Header />
-    < Introduction />
-    < FeaturedProject />
-    < RecentBlog />
+    <div class="inner_wrapper">
+      < Introduction />
+      < FeaturedProject />
+      < RecentBlog />
+      < Footer />
 
-    {/* 
-    < ContactMe (Footer) />
-    */}
-
-    {/* Project Page
+      {/* Project Page
     < Project />
     */}
-
+    </div>
   </div>
 );
