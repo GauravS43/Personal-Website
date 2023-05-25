@@ -34,10 +34,6 @@ body {
   opacity: 0;
 }
 
-.visible {
-  opacity: 1;
-}
-
 .animateUP {
   animation: goingUp 1.5s forwards;
 }
@@ -108,10 +104,13 @@ body {
   float: left;
 }
 
-.initials_container h1 {
-  height: 100%;
+.initials_container a {
   display: table-cell;
   vertical-align: middle;
+}
+
+.initials_container h1 {
+  color: white;
   font-family: 'Jost', sans-serif;
   font-size: 6vh;
   user-select: none;
@@ -130,19 +129,20 @@ body {
   user-select: none;
 }
 
-.navigation h2 {
+.navigation a {
   height: 100%;
   font-size: 20px;
   display: table;
   float: left;
   padding: 0px 20px;
+  color: white;
 }
 
-.navigation h2 :hover {
+.navigation a :hover {
   opacity: 0.7;
 }
 
-.navigation h2 li {
+.navigation a li {
   display: table-cell;
   vertical-align: middle;
   transition: 0.25s ease;
@@ -187,10 +187,10 @@ body {
   color: #00303b;
 }
 
-
 .link_container {
   margin-top: 2%;
   display: flex;
+  user-select: none;
 }
 
 .link_container a {
@@ -256,7 +256,6 @@ body {
   font-size: 28px;
   font-weight: 400;
 }
-
 
 .scroll span {
   margin-top: 2vw;
@@ -383,7 +382,7 @@ body {
   background-color: white;
   text-align: center;
   width: 30%;
-  font-size: 240%;
+  font-size: 3vw;
   font-weight: 400;
   color: #00303b;
   border-radius: 20px;
@@ -509,6 +508,29 @@ body {
 }
 
 
+/*----------------- PROJECT TEMPLATE SECTION -----------------*/
+
+.page_intro {
+  margin-top: 10vh;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.page_intro h1 {
+  font-size: 3.2vw;
+  width: 20%;
+  text-align: center;
+  margin: auto;
+  padding: 10px 10px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  color: white;
+  background-color: #ff7777;
+  border-radius: 40px;
+}
+
 /* Locks scale for wider monitors */
 @media screen and (min-width:1400px) {
   .intro_text_container h2 {
@@ -519,11 +541,19 @@ body {
     font-size: 200%;
   }
 
+  .link_container button {
+    font-size: 200%;
+  }
+
   .intro_img_container img {
     border: 16px solid #00303b;
   }
 
   .inner_f_proj h2 {
+    font-size: 260%;
+  }
+
+  .r_blog h2 {
     font-size: 260%;
   }
 }

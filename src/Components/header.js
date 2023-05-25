@@ -1,17 +1,17 @@
 import React from "react"
 
-function Header(props) {
+function Header() {
     return (
         <div className="header">
             <div className="inner_header">
                 <div className="initials_container">
-                    <h1 onClick={props.toHome}> GS </h1>
+                    <a href="/home"><h1> GS </h1></a>
                 </div>
 
                 <ul className="navigation">
-                    <h2><li onClick={props.toHome}>Home</li></h2>
-                    <h2><li onClick={props.toProject}>Projects</li></h2>
-                    <h2><li onClick={props.toBlog}>Blog</li></h2>
+                    <a href="/home"><li>Home</li></a>
+                    <a href="/projects"><li>Projects</li></a>
+                    <a href="/blog"><li>Blog</li></a>
                 </ul>
             </div>
         </div >

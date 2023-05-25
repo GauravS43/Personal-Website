@@ -11,7 +11,7 @@ function Introduction() {
             <div className="inner_intro">
                 <div className="intro_left">
                     <div className="intro_text_container">
-                        <h2 className="animation  left">
+                        <h2 className="animation left">
                             Hi, I'm Gaurav Sharma.
                             <br></br>
                             Welcome to my website!

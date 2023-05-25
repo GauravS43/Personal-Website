@@ -1,7 +1,7 @@
 import React from "react"
 import sf from "./Images/sf.png"
 
-function FeaturedProject({ toProject }) {
+function FeaturedProject() {
     return (
         <div className="f_proj">
             <div className="inner_f_proj animation left">
@@ -29,7 +29,7 @@ function FeaturedProject({ toProject }) {
                         </div>
 
                         <div className="link_container" style={{ width: "90%" }}>
-                            <button onClick={toProject}>Projects</button>
+                            <button>Projects</button>
                         </div>
                     </div>
                 </div>

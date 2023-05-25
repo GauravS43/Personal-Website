@@ -10,7 +10,7 @@ function RecentBlog({ toBlog }) {
                     <h4> A cupiditate? Perspiciatis, nesciunt? Labore, aut pariatur nam necessitatibus soluta ratione minus corporis cumque vero ducimus a, alias autem non et hic nemo culpa. Ipsam aperiam magnam qui vitae adipisci nesciunt consequuntur explicabo tenetur corporis ad at eligendi distinctio debitis dolorum hic fuga id rerum deleniti cum neque facere non esse, voluptates quasi. Consectetur impedit ipsa earum culpa! Veniam officia delectus aut, quaerat dolore dolores repellat maiores id minus harum expedita voluptatibus, placeat saepe autem!</h4>
                     <div className="whiteBox"></div>
                     <div className="enlarger">
-                        <h2>Read more →</h2>
+                        <h3>Read more →</h3>
                     </div>
                 </div>
                 <div className="blog_post animation">
@@ -18,7 +18,7 @@ function RecentBlog({ toBlog }) {
                     <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident velit impedit iusto consequatur rem harum vitae, esse animi maxime odio magni, inventore necessitatibus quibusdam officia cupiditate? Perspiciatis, nesciunt? Labore, aut pariatur nam necessitatibus soluta ratione minus corporis cumque vero ducimus a, alias autem non et hic nemo culpa. Ipsam aperiam magnam qui vitae adipisci nesciunt consequuntur explicabo tenetur corporis ad at eligendi distinctio debitis dolorum hic fuga id rerum deleniti cum neque facere non esse, voluptates quasi. Consectetur impedit ipsa earum culpa! Veniam officia delectus aut, quaerat dolore dolores repellat maiores id minus harum expedita voluptatibus, placeat saepe autem!</h4>
                     <div className="whiteBox"></div>
                     <div className="enlarger">
-                        <h2>Read more →</h2>
+                        <h3>Read more →</h3>
                     </div>
                 </div>
             </div>
