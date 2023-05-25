@@ -1,9 +1,8 @@
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { Header } from './Components/header.js';
-import { Introduction } from './Components/introduction.js'
-import { FeaturedProject } from './Components/featured_project';
-import { RecentBlog } from './Components/recent_posts';
+import { HomePage, ProjectPage, BlogPage } from './pages';
 import { Footer } from './Components/footer';
 
 //Animation based on scroll
@@ -27,19 +26,33 @@ window.addEventListener('load', (event) => {
   })
 });
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <div class="wrapper">
-    < Header />
-    <div class="inner_wrapper">
-      < Introduction />
-      < FeaturedProject />
-      < RecentBlog />
-      < Footer />
+function Wrapper() {
+  const [siteState, setSiteState] = React.useState(0)
 
-      {/* Project Page
-    < Project />
-    */}
+  function toHome() {
+    setSiteState(0)
+  }
+
+  function toProject() {
+    setSiteState(1)
+  }
+
+  function toBlog() {
+    setSiteState(2)
+  }
+
+  return (
+    <div className="wrapper">
+      < Header toHome={toHome} toProject={toProject} toBlog={toBlog} />
+      <div className="inner_wrapper">
+        {siteState === 0 && < HomePage toProject={toProject} toBlog={toBlog} />}
+        {siteState === 1 && < ProjectPage />}
+        {siteState === 2 && < BlogPage />}
+        < Footer />
+      </div>
     </div>
-  </div>
-);
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(< Wrapper />);

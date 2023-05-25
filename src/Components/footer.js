@@ -4,9 +4,9 @@ import linkedin from "./Images/linkedin.png"
 
 function Footer() {
     return (
-        <div class="footer">
-            <div class="inner_footer">
-                <div class="icons">
+        <div className="footer">
+            <div className="inner_footer">
+                <div className="icons">
                     <a target={"_blank"} rel="noreferrer" href="https://www.linkedin.com/in/gauravs43/"><img src={linkedin} alt="logo"></img></a>
                     <a target={"_blank"} rel="noreferrer" href="https://github.com/gauravs43"><img src={github} alt="logo"></img></a>
                 </div>

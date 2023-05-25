@@ -1,17 +1,17 @@
 import React from "react"
 import sf from "./Images/sf.png"
 
-function FeaturedProject() {
+function FeaturedProject({ toProject }) {
     return (
-        <div class="f_proj">
-            <div class="inner_f_proj animation left">
+        <div className="f_proj">
+            <div className="inner_f_proj animation left">
                 <h2>Featured Project: Street Fighter Reinforcement Learning</h2>
                 <div style={{ display: "flex", height: "80%" }}>
-                    <div class="f_proj_left">
+                    <div className="f_proj_left">
                         <img src={sf} alt="Featured Project" />
                     </div>
-                    <div class="f_proj_right">
-                        <div class="f_proj_text_container">
+                    <div className="f_proj_right">
+                        <div className="f_proj_text_container">
                             <h3>
                                 Banditiis iure quam voluptate aperiam tempore molestias
                                 nobis numquam, accusantium, ea dignissimos corrupti est
@@ -28,8 +28,8 @@ function FeaturedProject() {
                             </h3>
                         </div>
 
-                        <div class="link_container" style={{ width: "90%" }}>
-                            <a href=".">Projects</a>
+                        <div className="link_container" style={{ width: "90%" }}>
+                            <button onClick={toProject}>Projects</button>
                         </div>
                     </div>
                 </div>

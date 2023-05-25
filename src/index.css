@@ -34,6 +34,10 @@ body {
   opacity: 0;
 }
 
+.visible {
+  opacity: 1;
+}
+
 .animateUP {
   animation: goingUp 1.5s forwards;
 }
@@ -126,18 +130,19 @@ body {
   user-select: none;
 }
 
-.navigation a {
+.navigation h2 {
   height: 100%;
+  font-size: 20px;
   display: table;
   float: left;
   padding: 0px 20px;
 }
 
-.navigation a :hover {
+.navigation h2 :hover {
   opacity: 0.7;
 }
 
-.navigation a li {
+.navigation h2 li {
   display: table-cell;
   vertical-align: middle;
   transition: 0.25s ease;
@@ -190,6 +195,7 @@ body {
 
 .link_container a {
   font-size: 2.5vw;
+  font-weight: 400;
   margin: auto;
   color: white;
   background-color: #00303b;
@@ -197,6 +203,20 @@ body {
   width: 30%;
   min-width: fit-content;
   text-align: center;
+  border-radius: 30px;
+  transition: 0.25s ease;
+}
+
+.link_container button {
+  border: 0px;
+  font-family: 'Jost', sans-serif;
+  font-size: 2.5vw;
+  font-weight: 400;
+  margin: auto;
+  color: white;
+  background-color: #00303b;
+  padding: 5px 5px;
+  width: 50%;
   border-radius: 30px;
   transition: 0.25s ease;
 }
