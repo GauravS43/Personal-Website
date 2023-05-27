@@ -4,8 +4,9 @@ import sf from "./Images/sf.png"
 function FeaturedProject() {
     return (
         <div className="f_proj">
+            <h2 className="animation">Featured Project</h2>
             <div className="inner_f_proj animation left">
-                <h2>Featured Project: Street Fighter Reinforcement Learning</h2>
+                <h2>Street Fighter Reinforcement Learning</h2>
                 <div style={{ display: "flex", height: "80%" }}>
                     <div className="f_proj_left">
                         <img src={sf} alt="Featured Project" />
@@ -27,9 +28,8 @@ function FeaturedProject() {
                                 non molestias?
                             </h3>
                         </div>
-
                         <div className="link_container" style={{ width: "90%" }}>
-                            <button>Projects</button>
+                            <a href="/projects">Projects</a>
                         </div>
                     </div>
                 </div>

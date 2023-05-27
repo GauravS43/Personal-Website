@@ -4,6 +4,7 @@ import { Footer } from './Components/footer'
 import { Introduction } from './Components/introduction'
 import { FeaturedProject } from './Components/featured_project';
 import { RecentBlog } from './Components/recent_posts';
+import { Post } from './Components/post_template'
 
 function HomePage() {
     return (
@@ -47,6 +48,7 @@ function BlogPage(props) {
                 <div className="page_intro">
                     <h1>Blog</h1>
                 </div>
+                <Post />
                 < Footer />
             </div>
         </>

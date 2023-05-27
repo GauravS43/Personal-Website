@@ -1,6 +1,6 @@
 import React from "react"
 
-function RecentBlog({ toBlog }) {
+function RecentBlog() {
     return (
         <div className="r_blog" >
             <h2 className="animation">Recent Blog Posts</h2>
@@ -23,7 +23,7 @@ function RecentBlog({ toBlog }) {
                 </div>
             </div>
             <div className="link_container animation">
-                <button onClick={toBlog}>Blog</button>
+                <a href="/blog">Blog</a>
             </div>
         </div>
     )
