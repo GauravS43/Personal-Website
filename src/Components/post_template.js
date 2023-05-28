@@ -1,17 +1,16 @@
 import React from "react"
-import sf from "./Images/sf.png"
 
-export function Post(props) {
+export function Post({ post_data, showModal }) {
     return (
-        <div className="post_wrapper">
-            <div className="post_inner">
-                <div className="post_left">
-                    <img src={sf} alt="Featured Project" />
-                </div>
-                <div className="post_right">
-                    <h2>Title</h2>
-                    <h3>text</h3>
-                </div>
+        <div className="blog_post animation">
+            <h3>{post_data[0]}</h3>
+            <div className="date">
+                {post_data[1]}
+            </div>
+            <h4>{post_data[2]}</h4>
+            <div className="whiteBox"></div>
+            <div className="enlarger">
+                <h3 onClick={showModal}>Read more →</h3>
             </div>
         </div>
     )

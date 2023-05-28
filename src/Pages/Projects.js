@@ -5,7 +5,7 @@ import { Project } from "../Components/project_template";
 import { SF_project } from "../Data/d_projects"
 import sf from "../Components/Images/sf.png"
 
-export function ProjectsPage(props) {
+export function ProjectsPage() {
     return (
         <>
             < Header />

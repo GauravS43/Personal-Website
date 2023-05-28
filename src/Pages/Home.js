@@ -3,7 +3,7 @@ import { Header } from '../Components/header'
 import { Modal } from '../Components/modal'
 import { Introduction } from '../Components/introduction'
 import { FeaturedProject } from '../Components/featured_project';
-import { RecentBlog } from '../Components/recent_posts';
+import { RecentPosts } from '../Components/recent_posts';
 import { Footer } from '../Components/footer'
 
 
@@ -23,7 +23,7 @@ export function HomePage() {
                 < Modal display={modal} hideModal={updateModal} />
                 < Introduction />
                 < FeaturedProject />
-                < RecentBlog showModal={updateModal} />
+                < RecentPosts showModal={updateModal} />
                 < Footer />
             </div>
         </>
