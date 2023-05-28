@@ -1,7 +1,7 @@
 import React from "react"
 import sf from "./Images/sf.png"
 
-function Post(props) {
+export function Post(props) {
     return (
         <div className="post_wrapper">
             <div className="post_inner">
@@ -16,5 +16,3 @@ function Post(props) {
         </div>
     )
 }
-
-export { Post }

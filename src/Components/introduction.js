@@ -5,7 +5,7 @@ window.onscroll = function () {
     document.getElementById("scrollInform").style.opacity = "0";
 }
 
-function Introduction() {
+export function Introduction() {
     return (
         <div className="intro">
             <div className="inner_intro">
@@ -18,8 +18,8 @@ function Introduction() {
                         </h2>
                     </div>
                     <div className="link_container animation">
-                        <a target={"_blank"} rel="noreferrer" href="https://www.linkedin.com/in/gauravs43/">LinkedIn</a>
-                        <a target={"_blank"} rel="noreferrer" href="https://github.com/gauravs43">GitHub</a>
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/gauravs43/">LinkedIn</a>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/gauravs43">GitHub</a>
                     </div>
                 </div>
 
@@ -34,5 +34,3 @@ function Introduction() {
         </div >
     )
 }
-
-export { Introduction }

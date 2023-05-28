@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HomePage, ProjectPage, BlogPage } from './pages';
+import { HomePage } from './Pages/Home'
+import { ProjectsPage } from './Pages/Projects'
+import { BlogPage } from './Pages/Blog'
 
 //Animation based on scroll
 window.addEventListener('load', (event) => {
@@ -32,7 +34,7 @@ function Wrapper() {
         <Routes>
           <Route index element={< HomePage />} />
           <Route path='/home' element={< HomePage />} />
-          <Route path='/projects' element={< ProjectPage />} />
+          <Route path='/projects' element={< ProjectsPage />} />
           <Route path='/blog' element={< BlogPage />} />
           {/* <Route path='*' element={}/> */}
         </Routes>

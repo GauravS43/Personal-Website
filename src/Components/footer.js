@@ -2,7 +2,7 @@ import React from "react"
 import github from "./Images/github.png"
 import linkedin from "./Images/linkedin.png"
 
-function Footer() {
+export function Footer() {
     return (
         <div className="footer">
             <div className="inner_footer">
@@ -15,5 +15,3 @@ function Footer() {
         </div >
     )
 }
-
-export { Footer }
