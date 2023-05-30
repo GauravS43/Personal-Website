@@ -9,18 +9,17 @@ import { Footer } from '../Components/footer'
 
 
 export function HomePage() {
-    const [modal, setModal] = React.useState(false)
+    const [modal, setModal] = React.useState(0)
 
-    function updateModal() {
-        console.log("changed");
-        setModal(!modal);
+    function updateModal(post_num) {
+        setModal(post_num);
     }
 
     return (
         <>
             < Header />
             <div className="inner_wrapper">
-                < Modal display={modal} hideModal={updateModal} />
+                < Modal display_state={modal} hideModal={() => updateModal(0)} />
                 < Introduction />
                 < FeaturedProject />
                 < RecentPosts showModal={updateModal} />

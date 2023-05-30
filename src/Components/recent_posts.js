@@ -8,8 +8,8 @@ export function RecentPosts({ showModal }) {
         <div className="r_blog" >
             <h2 className="animation">Recent Blog Posts</h2>
             <div className="blog_row">
-                <Post post_data={sample_post} showModal={showModal} />
-                <Post post_data={sample_post} showModal={showModal} />
+                <Post post_num={2} post_data={sample_post} showModal={showModal} />
+                <Post post_num={1} post_data={sample_post} showModal={showModal} />
             </div>
             <div className="link_container animation">
                 <a href="/blog">Blog</a>
