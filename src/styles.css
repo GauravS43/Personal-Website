@@ -396,6 +396,7 @@ body {
 }
 
 .inner_proj h2 {
+  background-color: transparent;
   width: 100%;
   font-size: 3vw;
   font-weight: 400;
@@ -410,7 +411,12 @@ body {
   right: 5%;
 }
 
-.inner_proj .proj_left {
+.proj_flex {
+  display: flex;
+  height: 80%;
+}
+
+.proj_left {
   width: 50%;
   height: 100%;
   display: flex;
@@ -445,6 +451,10 @@ body {
   font-weight: 400;
 }
 
+.proj_flex .link_container {
+  width: 90%;
+}
+
 /*----------------- RECENT BLOG AND TEMPLATE SECTION -----------------*/
 
 .r_blog {
@@ -469,7 +479,7 @@ body {
 .blog_row {
   width: 100%;
   height: 60vh;
-  margin-top: 4vh;
+  display: flex;
   font-family: 'Jost', sans-serif;
 }
 
@@ -485,6 +495,7 @@ body {
   width: 40%;
   background-color: white;
   border-radius: 40px;
+  margin-top: 4vh;
   margin-left: 5%;
   margin-right: 5%;
   overflow: hidden;
@@ -513,6 +524,7 @@ body {
   padding-top: 2%;
   font-weight: 400;
   font-size: 120%;
+  text-align: justify;
   color: #00303b;
   white-space: pre-wrap;
 }
@@ -646,5 +658,118 @@ body {
 
   .r_blog h2 {
     font-size: 260%;
+  }
+}
+
+/* Mobile view */
+@media screen and (max-width:500px) {
+
+  /* HEADER SECTION */
+  .initials_container h1 {
+    font-size: 32px;
+  }
+
+  .navigation a {
+    font-size: 20px;
+    padding: 0px 10px;
+  }
+
+  /* INTRODUCTION SECTION */
+  .intro {
+    height: 70vh;
+  }
+
+  .inner_intro {
+    flex-direction: column-reverse;
+  }
+
+  .intro_left {
+    width: 100%;
+  }
+
+  .intro_text_container h2 {
+    font-size: 30px;
+  }
+
+  .intro_img_container {
+    width: 100%;
+  }
+
+  .intro_img_container img {
+    border: 12px solid #00303b;
+  }
+
+  .link_container {
+    flex-direction: column;
+  }
+
+  .link_container a {
+    font-size: 20px;
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  /* FEATURED PROJECT SECTION */
+
+  .f_proj h2 {
+    width: 65%;
+    font-size: 30px;
+  }
+
+  .inner_proj h2 {
+    margin: auto;
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .date {
+    display: none;
+  }
+
+  .proj_flex {
+    flex-direction: column;
+  }
+
+  .proj_left {
+    display: none;
+    width: 100%;
+  }
+
+  .proj_right {
+    width: 100%;
+  }
+
+  .proj_text_container {
+    padding: 5%;
+  }
+
+  .proj_flex .link_container {
+    width: 100%;
+  }
+
+  /* RECENT BLOG SECTION */
+  .r_blog {
+    height: 120vh;
+  }
+
+  .r_blog h2 {
+    font-size: 30px;
+    width: 80%;
+  }
+
+  .blog_row {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .blog_post {
+    height: 120%;
+    width: 90%;
+  }
+
+  /* SUBPAGE SECTION */
+  .page_intro h1 {
+    width: 40%;
+    font-size: 30px;
   }
 }

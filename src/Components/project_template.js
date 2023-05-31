@@ -8,7 +8,7 @@ export function Project({ proj_data, img, isFeatured }) {
                 <div className="date">
                     {proj_data[1]}
                 </div>
-                <div style={{ display: "flex", height: "80%" }}>
+                <div className="proj_flex">
                     <div className="proj_left">
                         <img src={img} alt="Project Img" />
                     </div>
@@ -19,7 +19,7 @@ export function Project({ proj_data, img, isFeatured }) {
                             </h3>
                         </div>
 
-                        <div className="link_container" style={{ width: "90%" }}>
+                        <div className="link_container">
                             <a target="_blank" rel="noreferrer" href={proj_data[3]}>Github</a>
                             {isFeatured && <a href="/projects">Projects</a>}
                         </div>
