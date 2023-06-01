@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'react-router-dom';
 
 export function Header() {
     return (
@@ -9,9 +10,9 @@ export function Header() {
                 </div>
 
                 <ul className="navigation">
-                    <a href="/home"><li>Home</li></a>
-                    <a href="/projects"><li>Projects</li></a>
-                    <a href="/blog"><li>Blog</li></a>
+                    <Link reloadDocument to="../home"><li>Home</li></Link>
+                    <Link reloadDocument to="../projects"><li>Projects</li></Link>
+                    <Link reloadDocument to="../blog"><li>Blog</li></Link>
                 </ul>
             </div>
         </div >

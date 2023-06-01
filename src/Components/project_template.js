@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'react-router-dom';
 
 export function Project({ proj_data, img, isFeatured }) {
     return (
@@ -21,7 +22,7 @@ export function Project({ proj_data, img, isFeatured }) {
 
                         <div className="link_container">
                             <a target="_blank" rel="noreferrer" href={proj_data[3]}>Github</a>
-                            {isFeatured && <a href="/projects">Projects</a>}
+                            {isFeatured && <Link reloadDocument to="../projects">Projects</Link>}
                         </div>
                     </div>
                 </div>
