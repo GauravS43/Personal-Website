@@ -11,7 +11,7 @@ export function RecentPosts({ showModal }) {
                 <Post post_num={2} post_data={sample_post} showModal={showModal} />
                 <Post post_num={1} post_data={sample_post} showModal={showModal} />
             </div>
-            <div className="link_container animation" style={{ margin: "4vh 0vh 20vh 0vh" }}>
+            <div className="link_container animation">
                 <Link reloadDocument to="../blog">Blog</Link>
             </div>
         </div>
