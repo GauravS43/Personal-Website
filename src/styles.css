@@ -442,7 +442,7 @@ body {
 .proj_text_container {
   width: 90%;
   margin-bottom: 4%;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .proj_right h3 {
@@ -703,6 +703,10 @@ body {
     font-size: 4vw;
   }
 
+  .project :hover {
+    transform: scale(1);
+  }
+
   .inner_proj h2 {
     width: 100%;
   }
@@ -744,6 +748,10 @@ body {
   .blog_row {
     flex-direction: column;
     height: 100vh;
+  }
+
+  .blog_row :hover {
+    transform: scale(1);
   }
 
   .blog_post {
