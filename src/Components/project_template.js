@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'react-router-dom';
 
-export function Project({ proj_data, img, isFeatured }) {
+export function Project({ proj_data, isFeatured }) {
     return (
         <div className="project">
             <div className="inner_proj animation left">
@@ -11,7 +11,7 @@ export function Project({ proj_data, img, isFeatured }) {
                 </div>
                 <div className="proj_flex">
                     <div className="proj_left">
-                        <img src={img} alt="Project Img" />
+                        <img src={proj_data[5]} alt="Project Img" />
                     </div>
                     <div className="proj_right">
                         <div className="proj_text_container">
@@ -21,7 +21,7 @@ export function Project({ proj_data, img, isFeatured }) {
                         </div>
 
                         <div className="link_container">
-                            <a target="_blank" rel="noreferrer" href={proj_data[3]}>Github</a>
+                            <a target="_blank" rel="noreferrer" href={proj_data[4]}>{proj_data[3]}</a>
                             {isFeatured && <Link reloadDocument to="../projects">Projects</Link>}
                         </div>
                     </div>

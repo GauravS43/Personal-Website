@@ -1,6 +1,6 @@
 import React from "react"
 import { Post } from './post_template'
-import { sample_post } from '../Data/d_blog'
+import { sample_post } from "../Data/d_blog"
 import { Link } from "react-router-dom"
 
 export function RecentPosts({ showModal }) {

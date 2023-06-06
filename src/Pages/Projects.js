@@ -2,8 +2,7 @@ import React from "react"
 import { Header } from '../Components/header'
 import { Footer } from '../Components/footer'
 import { Project } from "../Components/project_template";
-import { SF_project } from "../Data/d_projects"
-import sf from "../Components/Images/sf.png"
+import { SF_RL, PF_VIS, MAN_HL, TRIG_APP } from "../Data/d_projects"
 
 export function ProjectsPage() {
     return (
@@ -14,11 +13,10 @@ export function ProjectsPage() {
                 <div className="page_intro">
                     <h1>Projects</h1>
                 </div>
-                <Project proj_data={SF_project} img={sf} isFeatured={false} />
-                <Project proj_data={SF_project} img={sf} isFeatured={false} />
-                <Project proj_data={SF_project} img={sf} isFeatured={false} />
-                <Project proj_data={SF_project} img={sf} isFeatured={false} />
-                <Project proj_data={SF_project} img={sf} isFeatured={false} />
+                <Project proj_data={SF_RL} isFeatured={false} />
+                <Project proj_data={PF_VIS} isFeatured={false} />
+                <Project proj_data={MAN_HL} isFeatured={false} />
+                <Project proj_data={TRIG_APP} isFeatured={false} />
                 < Footer />
             </div>
         </>
