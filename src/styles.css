@@ -170,7 +170,7 @@ body {
   height: 60%;
   background-color: white;
   margin: 12vh auto;
-  padding: 24px;
+  padding: 40px;
   border-radius: 24px;
   font-family: 'Jost', sans-serif;
   color: #00303b;
@@ -182,9 +182,14 @@ body {
   font-weight: 600;
 }
 
+.modal_text_container {
+  overflow: scroll;
+  margin-top: 1%;
+  height: 90%;
+}
+
 .inner_modal h3 {
   width: 100%;
-  text-align: center;
   font-weight: 400;
 }
 

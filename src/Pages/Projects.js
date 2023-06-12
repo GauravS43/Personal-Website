@@ -13,10 +13,10 @@ export function ProjectsPage() {
                 <div className="page_intro">
                     <h1>Projects</h1>
                 </div>
-                <Project proj_data={SF_RL} isFeatured={false} />
-                <Project proj_data={PF_VIS} isFeatured={false} />
-                <Project proj_data={MAN_HL} isFeatured={false} />
-                <Project proj_data={TRIG_APP} isFeatured={false} />
+                <Project proj_data={SF_RL} isFeatured={false} linkSite={false} />
+                <Project proj_data={PF_VIS} isFeatured={false} linkSite={true} />
+                <Project proj_data={MAN_HL} isFeatured={false} linkSite={true} />
+                <Project proj_data={TRIG_APP} isFeatured={false} linkSite={true} />
                 < Footer />
             </div>
         </>

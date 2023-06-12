@@ -1,7 +1,7 @@
-let sample_post = [
+let website_post = [
     "Making a website!",
     "01/23",
-    " A cupiditate? Perspiciatis, nesciunt? Labore, aut pariatur nam necessitatibus soluta ratione minus corporis cumque vero ducimus a, alias autem non et hic nemo culpa. Ipsam aperiam magnam qui vitae adipisci nesciunt consequuntur explicabo tenetur corporis ad at eligendi distinctio debitis dolorum hic fuga id rerum deleniti cum neque facere non esse, voluptates quasi. Consectetur impedit ipsa earum culpa! Veniam officia delectus aut, quaerat dolore dolores repellat maiores id minus harum expedita voluptatibus, placeat saepe autem!"
+    "Creating a website, and by extension a blog, can be an intimidating endeavor. It requires consistent maintenance and updates, as well as the dedication to share new content regularly. But it is for this reason that I believe that building a website is a rewarding experience. In this blog post, I will delve into my recent journey of creating a website using React, reflecting on past projects, and exploring the exciting possibilities that lie ahead."
 ]
 
-export { sample_post }
+export { website_post }
