@@ -3,7 +3,7 @@ import React from "react";
 export function Modal({ display_state, hideModal }) {
     let modal_style = (display_state > 0) ? { display: "block" } : { display: "none" };
 
-    let title = ["Making a Website!", "Making Street Fighter Reinforcment Learning."];
+    let title = ["Making a Website!", "Reinforcement Learning SF2"];
 
     return (
         <div className="modal_wrapper" style={modal_style} onClick={hideModal}>

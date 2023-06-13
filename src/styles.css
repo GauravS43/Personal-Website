@@ -533,6 +533,7 @@ body {
   text-align: justify;
   color: #00303b;
   white-space: pre-wrap;
+  overflow: scroll;
 }
 
 .r_blog .link_container {
