@@ -3,7 +3,7 @@ import { Header } from '../Components/header'
 import { Footer } from '../Components/footer'
 import { Post } from '../Components/post_template'
 import { Modal } from "../Components/modal"
-import { website_post } from '../Data/d_blog'
+import { website_post, sf_rl_post } from '../Data/d_blog'
 
 export function BlogPage() {
     const [modal, setModal] = React.useState(0)
@@ -23,6 +23,7 @@ export function BlogPage() {
                     <h1>Blog</h1>
                 </div>
                 <div className="blog_row">
+                    <Post post_num={2} post_data={sf_rl_post} showModal={updateModal} />
                     <Post post_num={1} post_data={website_post} showModal={updateModal} />
                 </div>
                 < Footer />

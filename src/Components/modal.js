@@ -3,7 +3,7 @@ import React from "react";
 export function Modal({ display_state, hideModal }) {
     let modal_style = (display_state > 0) ? { display: "block" } : { display: "none" };
 
-    let title = ["Making a Website!"];
+    let title = ["Making a Website!", "Making Street Fighter Reinforcment Learning."];
 
     return (
         <div className="modal_wrapper" style={modal_style} onClick={hideModal}>
@@ -24,6 +24,21 @@ export function Modal({ display_state, hideModal }) {
                             Overall, the website creation process itself is a delightful and creative journey. I embrace my artistic side and pay attention to intricate details, such as choosing the perfect color palette. Moreover, this experience serves as a valuable learning opportunity, as I improve the scalability of my website—a knowledge I intend to apply to my previous projects.
                             <br></br><br></br>
                             Creating a website using React has been an enriching experience. It has allowed me to reconnect with my past projects, unlock my creativity, and embrace the power of React's component-based architecture. I look forward to the exciting road ahead as I continue to evolve my website and share my knowledge and insights in future blog posts.
+                        </h3>
+                    }
+
+                    {
+                        display_state === 2 &&
+                        <h3>
+                            As my first machine learning project, I wanted to approach the material in a way that would ignite and sustain my interest in the subject for the duration of the project. Inspired by Youtube videos of machine learning models learning and eventually beating retro video games, I knew I had found the perfect project. In this blog post, I will discuss my inspirations for this project, the process of learning machine learning, and the difficulties in training the model.
+                            <br></br><br></br>
+                            With the emerging importance of machine learning in computer science, I wanted to do a project involving it. However, with it being far more abstract than my other projects, I initially didn’t have a strong idea for a project. But that quickly changed when I found the Youtube video, “MarI/O - Machine Learning for Video Games,” which displayed a model trained through Neurological Evolution of Augmenting Topologies (NEAT) playing Super Mario World. From there, I knew I had to do something similar.
+                            <br></br><br></br>
+                            Having solidified an idea, I quickly decided to create a model for Street Fighter 2 as it was an iconic retro game that wasn’t a platformer. At this early stage of the project, I was using Bizhawk and Lua to create the model, emulating the same methods showcased in the Youtube video. A lot of this earlier code can be found as “early_NEAT_run.lua” on the project’s GitHub page. Although I made progress, I reached a point where the model lacked satisfactory results and would not improve further. Ultimately I decided not to continue with Bizhawk and Lua as I felt my learning plateaued. I then made the dramatic switch to Python using another Youtube video, “Build a Street Fighter AI Model with Python | Gaming Reinforcement Learning Full Course” as a basis.
+                            <br></br><br></br>
+                            In contrast to the archaic Bizhawk emulator, primarily designed for tool-assisted speedrunning, Python proved to be a much more accessible choice for machine learning. Libraries such as StableBaselines3 and Gym Retro greatly streamlined the development process. In fact, Gym Retro's documentation even references and provides links to resources on Proximal Policy Optimization (PPO). Despite this, the process of learning PPO was more challenging than NEAT. The latter felt more approachable due to its similarities with biological evolution, whereas PPO lacked a real-world equivalent. I plan to delve deeper into my experiences with both algorithms in my next blog post. However, I can confidently say that Python's rich library ecosystem made PPO easier to implement than NEAT.
+                            <br></br><br></br>
+                            Overall, this project has not only introduced me to various machine learning algorithms but also established a robust framework that I intend to utilize in future endeavors. With Gym Retro's ability to host a variety of retro games, I plan to tackle other iconic titles in the future while strengthening my understanding of machine learning.
                         </h3>
                     }
                 </div>

@@ -39,7 +39,7 @@ let PF_VIS = [
 let MAN_HL = [
     "Manga Higher or Lower",
     "07/22",
-    "Test your Manga Knowledge in this website built in React. Choose which of two randomly selected manga has the higher popularity or rating based on MyAnimeList users. This web-based app utlizes a custom API built in Python using Flask that stores information on 2000 manga. The front-end was independently designed and built based on the Higher Lower Game.",
+    "Test your Manga Knowledge on this website built in React. Choose which of two randomly selected manga has the higher popularity or rating based on MyAnimeList users. This web-based app utilizes a custom API built in Python using Flask that stores information on 2000 manga. The front end was independently created and designed based on the Higher Lower Game.",
     "Github",
     "https://github.com/GauravS43/MangaHigherLower",
     "https://mangahigherlower.netlify.app/",
