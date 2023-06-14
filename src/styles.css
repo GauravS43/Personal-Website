@@ -726,6 +726,11 @@ body {
     box-shadow: 10px 10px #00303b;
   }
 
+  .inner_proj :hover {
+    transform: scale(1);
+    box-shadow: 0px 0px #00303b;
+  }
+
   .inner_proj h2 {
     width: 100%;
   }
@@ -772,6 +777,11 @@ body {
   .blog_row :hover {
     transform: scale(1);
     box-shadow: 10px 10px #00303b;
+  }
+
+  .blog_post :hover {
+    transform: scale(1);
+    box-shadow: 0px 0px #00303b;
   }
 
   .blog_post {
