@@ -707,14 +707,23 @@ body {
   }
 
   /* FEATURED PROJECT SECTION */
+  .f_proj {
+    height: 120vh;
+    margin-bottom: 0vh;
+  }
 
   .f_proj h2 {
     width: 50%;
     font-size: 4vw;
   }
 
+  .f_proj .project {
+    height: 96%;
+  }
+
   .project :hover {
     transform: scale(1);
+    box-shadow: 10px 10px #00303b;
   }
 
   .inner_proj h2 {
@@ -747,7 +756,7 @@ body {
 
   /* RECENT BLOG SECTION */
   .r_blog {
-    height: 130vh;
+    height: 160vh;
   }
 
   .r_blog h2 {
@@ -757,15 +766,16 @@ body {
 
   .blog_row {
     flex-direction: column;
-    height: 100vh;
+    height: 90%;
   }
 
   .blog_row :hover {
     transform: scale(1);
+    box-shadow: 10px 10px #00303b;
   }
 
   .blog_post {
-    height: 120%;
+    height: 45%;
     width: 90%;
   }
 }
