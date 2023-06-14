@@ -736,7 +736,7 @@ body {
   }
 
   .date {
-    font-size: 10px;
+    display: none;
   }
 
   .proj_flex {
@@ -840,8 +840,13 @@ body {
     font-size: 25px;
   }
 
-  .date {
-    display: none;
+  .proj_text_container {
+    padding: 5% 10% 5% 10%;
+    width: 80%;
+  }
+
+  .proj_text_container h3 {
+    font-size: 18px;
   }
 
   .proj_flex {
