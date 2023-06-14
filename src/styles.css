@@ -495,6 +495,7 @@ body {
 }
 
 .blog_post {
+  position: relative;
   color: #00303b;
   float: left;
   height: 80%;
@@ -669,6 +670,9 @@ body {
 
 /* Tablet view */
 @media screen and (max-width:800px) {
+  .animation {
+    opacity: 1;
+  }
 
   /* INTRODUCTION SECTION */
   .inner_intro {

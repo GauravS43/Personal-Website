@@ -7,25 +7,27 @@ import { ProjectsPage } from './Pages/Projects'
 import { BlogPage } from './Pages/Blog'
 
 //Animation based on scroll
-window.addEventListener('load', (event) => {
-  let interObs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        var len = entry.target.classList.length;
-        if (entry.target.classList[len - 1] === "left")
-          entry.target.classList.add("animateLEFT");
-        else if (entry.target.classList[len - 1] === "right")
-          entry.target.classList.add("animateRIGHT");
-        else
-          entry.target.classList.add("animateUP");
-        interObs.unobserve(entry.target);
-      }
+if (window.innerWidth > 600) {
+  window.addEventListener('load', (event) => {
+    let interObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          var len = entry.target.classList.length;
+          if (entry.target.classList[len - 1] === "left")
+            entry.target.classList.add("animateLEFT");
+          else if (entry.target.classList[len - 1] === "right")
+            entry.target.classList.add("animateRIGHT");
+          else
+            entry.target.classList.add("animateUP");
+          interObs.unobserve(entry.target);
+        }
+      });
     });
+    document.querySelectorAll('.animation').forEach(obj => {
+      interObs.observe(obj);
+    })
   });
-  document.querySelectorAll('.animation').forEach(obj => {
-    interObs.observe(obj);
-  })
-});
+}
 
 function Wrapper() {
   return (
