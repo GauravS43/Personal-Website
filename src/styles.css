@@ -183,7 +183,7 @@ body {
 }
 
 .modal_text_container {
-  overflow: scroll;
+  overflow-y: scroll;
   margin-top: 1%;
   height: 90%;
 }
@@ -447,7 +447,7 @@ body {
 .proj_text_container {
   width: 90%;
   margin-bottom: 4%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .proj_right h3 {
@@ -534,7 +534,7 @@ body {
   text-align: justify;
   color: #00303b;
   white-space: pre-wrap;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .r_blog .link_container {
