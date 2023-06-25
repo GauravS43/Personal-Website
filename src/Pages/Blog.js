@@ -22,12 +22,16 @@ export function BlogPage() {
                 <div className="page_intro">
                     <h1>Blog</h1>
                 </div>
-                <div className="blog_row">
-                    <Post post_num={3} post_data={ml_post} showModal={updateModal} />
-                    <Post post_num={2} post_data={sf_rl_post} showModal={updateModal} />
+                <div className="blog_wrapper">
+                    <div className="blog_row">
+                        <Post post_num={3} post_data={ml_post} showModal={updateModal} />
+                        <Post post_num={2} post_data={sf_rl_post} showModal={updateModal} />
+                    </div>
                 </div>
-                <div className="blog_row">
-                    <Post post_num={1} post_data={website_post} showModal={updateModal} />
+                <div className="blog_wrapper">
+                    <div className="blog_row">
+                        <Post post_num={1} post_data={website_post} showModal={updateModal} />
+                    </div>
                 </div>
                 < Footer />
             </div>
