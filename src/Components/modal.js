@@ -3,7 +3,11 @@ import React from "react";
 export function Modal({ display_state, hideModal }) {
     let modal_style = (display_state > 0) ? { display: "block" } : { display: "none" };
 
-    let title = ["Making a Website!", "Reinforcement Learning SF2"];
+    let title = [
+        "Making a Website!",
+        "Reinforcement Learning SF2",
+        "Algorithms Galore",
+    ];
 
     return (
         <div className="modal_wrapper" style={modal_style} onClick={hideModal}>
@@ -39,6 +43,21 @@ export function Modal({ display_state, hideModal }) {
                             In contrast to the archaic Bizhawk emulator, primarily designed for tool-assisted speedrunning, Python proved to be a much more accessible choice for machine learning. Libraries such as StableBaselines3 and Gym Retro considerably streamlined the development process. Gym Retro's documentation even references and provides links to resources on Proximal Policy Optimization (PPO). Despite this, the process of learning PPO was more challenging than NEAT. The latter felt approachable due to its similarities with biological evolution, whereas PPO lacked a real-world equivalent. I plan to delve deeper into my experiences with both algorithms in my next blog post. However, I can confidently say that Python's rich library ecosystem made PPO easier to implement than NEAT.
                             <br></br><br></br>
                             Overall, this project has not only introduced me to various machine learning algorithms but also established a robust framework that I intend to utilize in future endeavours. With Gym Retro's ability to host a variety of retro games, I plan to tackle other iconic titles in the future while strengthening my understanding of machine learning.
+                        </h3>
+                    }
+
+                    {
+                        display_state === 3 &&
+                        <h3>
+                            In my recent project, I worked with machine learning for the first time. In particular, I used Proximal Policy Optimization (PPO) to train a model to play Street Fighter 2. In the process, I learned about and tested various machine learning algorithms, like the Neurological Evolution of Augmenting Topologies (NEAT). Although PPO and NEAT serve the same purpose, they differ significantly. In this blog post, I will discuss machine learning and explore the differences between PPO and NEAT.
+                            <br></br><br></br>
+                            Before my first project, I viewed machine learning as a confusing field filled with technical jargon. Several terms are used seemingly interchangeably for no apparent reason, like 'deep' learning and 'reinforcement' learning. However, in actuality, these terms are a specific subset of machine learning. Deep learning primarily focuses on neural networks, whereas reinforcement learning focuses on rewarding the actions of an agent in an environment and being tested in the same environment. Machine learning encompasses these terms and extends to other algorithms. A traditional machine learning algorithm utilizes training and testing datasets.
+                            <br></br><br></br>
+                            These categorizations are not mutually exclusive as PPO is an algorithm that combines aspects of deep and reinforcement learning, making it a deep reinforcement learning algorithm. It revolves around creating a policy, a set of parameters or weights for a neural network. PPO stands out due to its stability, achieved by clipping the advantage. The advantage represents the comparison between a potential action and the average action. Clipping the action ensures the model only considers actions within a specific range, preventing the model from making drastic choices that may lead to diminishing rewards.
+                            <br></br><br></br>
+                            On the other hand, despite NEAT containing neural networks and reinforcement, it is considered a neuroevolutionary algorithm. Unlike traditional neural networks that primarily adjust weights, NEAT evolves the network structure itself by modifying connections between nodes and introducing new nodes. NEAT starts with multiple slightly different instances of a simple neural network evaluates each network, then breeds the best-performing instances and mutates them. Through this iterative process, NEAT gradually develops a complex neural network.
+                            <br></br><br></br>
+                            Overall, learning machine learning has been a rewarding experience. Through it, I've learned a great deal about machine learning, the specifics of some algorithms, and how these algorithms differ. Namely, PPO focuses on creating a stable policy whereas NEAT evolves a neural network. Personally, NEAT was easier to understand due to its resemblance to natural selection. Sadly, I couldn't do the project with NEAT but I hope to work with the algorithm in the future.
                         </h3>
                     }
                 </div>
