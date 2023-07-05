@@ -1,6 +1,6 @@
 import React from "react"
 import { Post } from './post_template'
-import { ml_post, sf_rl_post, website_post } from "../Data/d_blog"
+import { ml_post, sf_rl_post } from "../Data/d_blog"
 import { Link } from "react-router-dom"
 
 export function RecentPosts({ showModal }) {
