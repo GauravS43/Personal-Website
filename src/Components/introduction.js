@@ -1,9 +1,9 @@
 import React from "react"
 import Gaurav from "./Images/Gaurav.webp"
 
-window.onscroll = function () {
-    document.getElementById("scrollInform").style.opacity = "0";
-}
+// window.onscroll = function () {
+//     document.getElementById("scrollInform").style.opacity = "0";
+// }
 
 export function Introduction() {
     return (
@@ -27,10 +27,10 @@ export function Introduction() {
                     <img src={Gaurav} alt="Gaurav Img" />
                 </div>
             </div>
-            <div className="scroll" id="scrollInform">
+            {/*<div className="scroll" id="scrollInform">
                 <h3>Scroll</h3>
                 <span></span>
-            </div>
+            </div>*/}
         </div >
     )
 }
