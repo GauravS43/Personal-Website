@@ -6,7 +6,7 @@ import { HomePage } from './Pages/Home'
 import { ProjectsPage } from './Pages/Projects'
 import { BlogPage } from './Pages/Blog'
 
-//Animation based on scroll
+/*Animation based on scroll
 if (window.innerWidth > 600) {
   window.addEventListener('load', (event) => {
     let interObs = new IntersectionObserver(entries => {
@@ -28,6 +28,7 @@ if (window.innerWidth > 600) {
     })
   });
 }
+*/
 
 function Wrapper() {
   return (
