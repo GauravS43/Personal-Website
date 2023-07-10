@@ -22,7 +22,7 @@ export function Project({ proj_data, isFeatured, linkSite }) {
 
                         <div className="link_container">
                             <a target="_blank" rel="noreferrer" href={proj_data[4]}>{proj_data[3]}</a>
-                            {isFeatured && <Link reloadDocument to="../projects">Projects</Link>}
+                            {isFeatured && <Link reloadDocument to="../projects">More Projects</Link>}
                             {linkSite && <a target="_blank" rel="noreferrer" href={proj_data[5]}>Website</a>}
                         </div>
                     </div>
