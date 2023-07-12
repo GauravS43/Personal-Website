@@ -60,6 +60,21 @@ export function Modal({ display_state, hideModal }) {
                             Overall, learning machine learning has been a rewarding experience. Through it, I've learned a great deal about machine learning, the specifics of some algorithms, and how these algorithms differ. Namely, PPO focuses on creating a stable policy whereas NEAT evolves a neural network. Personally, NEAT was easier to understand due to its resemblance to natural selection. Sadly, I couldn't do the project with NEAT but I hope to work with the algorithm in the future.
                         </h3>
                     }
+
+                    {
+                        display_state === 4 &&
+                        <h3>
+                            Manga Higher or Lower was my first experience working with React. Because of this, I anticipated encountering numerous flaws upon revisiting the project. Yet, to my surprise, my code has held up better than expected. In this blog post, I will discuss my experience of revisiting Manga Higher or Lower, implementing difficulties, improving and solving minor issues.
+                            <br></br><br></br>
+                            When I first finished this project and showed it to friends, I would often get complaints about the difficulty. Many found it discouraging when they were tasked with comparing the popularity/score of two unknown manga, especially after accumulating a big score. I found this to be a part of the game's charm, the fun of guessing which manga was more popular or acclaimed based on the title alone. Nevertheless, I added difficulty options to satisfy my friends' requests. The three difficulty options, Easy, Medium, and Hard, correspond to a different pool of manga that the game randomly selects from. The more challenging difficulties have a bigger dataset comprised of more obscure manga. Specifically, Easy features 100 of the most popular manga, Medium expands it to 500 titles, and Difficult challenges users with 2000 manga.
+                            <br></br><br></br>
+                            Another significant change I implemented focused on an edge case that would be extremely difficult to reach in regular gameplay. In the original version, it was impossible to encounter the same manga twice within a single play session. While this was not a significant concern with 2000 manga, it became evident that the smaller pools introduced with the difficulties could be quickly exhausted. To address this, I modified the algorithm so that if 90% of manga is exhausted, it refreshes, allowing the users to encounter previously seen titles again. This adjustment resolves a possible catastrophic issue and ensures that players can play however long they want.
+                            <br></br><br></br>
+                            In addition to these substantial modifications, I made minor adjustments to the website's scalability. I anticipated scaling to be a much larger issue due to my lack of experience when initially working on this project. However, this wasn't true as my previous scaling implementations were nearly perfect, with only minor adjustments needed for tiny devices and ultrawide monitors.
+                            <br></br><br></br>
+                            Revisiting Manga Higher Lower has provided a sense of completion. Despite this, I didn't complete everything I set out to do. I originally wanted to update the dataset of manga acquired from web scraping MyAnimeList. However, I couldn't do so because of new restrictions against web scraping on MyAnimeList. Regardless, I am confident this website is finished because this version represents the best possible iteration of the project, and I am satisfied with its current state.
+                        </h3>
+                    }
                 </div>
             </div>
         </div>

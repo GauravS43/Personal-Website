@@ -15,4 +15,11 @@ let ml_post = [
     "06/23",
     "In my recent project, I worked with machine learning for the first time. In particular, I used Proximal Policy Optimization (PPO) to train a model to play Street Fighter 2. In the process, I learned about and tested various machine learning algorithms, like the Neurological Evolution of Augmenting Topologies (NEAT). Although PPO and NEAT serve the same purpose, they differ significantly. In this blog post, I will discuss machine learning and explore the differences between PPO and NEAT."
 ]
-export { website_post, sf_rl_post, ml_post }
+
+let man_post = [
+    "Revisiting Higher or Lower",
+    "07/23",
+    "Manga Higher or Lower was my first experience working with React. Because of this, I anticipated encountering numerous flaws upon revisiting the project. Yet, to my surprise, my code has held up better than expected. In this blog post, I will discuss my experience of revisiting Manga Higher or Lower, implementing difficulties, improving and solving minor issues."
+]
+
+export { website_post, sf_rl_post, ml_post, man_post }
