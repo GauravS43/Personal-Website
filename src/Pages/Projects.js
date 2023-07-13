@@ -2,7 +2,7 @@ import React from "react"
 import { Header } from '../Components/header'
 import { Footer } from '../Components/footer'
 import { Project } from "../Components/project_template";
-import { SF_RL, PF_VIS, MAN_HL, TRIG_APP, MARIO_FPS, REAL_LAX } from "../Data/d_projects"
+import { SF_RL, PF_VIS, MAN_HL, TRIG_APP, MARIO_FPS, REAL_LAX, GNOME_HOMES } from "../Data/d_projects"
 
 export function ProjectsPage() {
     return (
@@ -31,9 +31,9 @@ export function ProjectsPage() {
                 <div className="project_wrapper">
                     <Project proj_data={REAL_LAX} isFeatured={false} />
                 </div>
-                {/*<div className="project_wrapper">
+                <div className="project_wrapper">
                     <Project proj_data={GNOME_HOMES} isFeatured={false} />
-                </div>*/}
+                </div>
                 < Footer />
             </div>
         </>

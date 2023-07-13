@@ -55,7 +55,7 @@ var MAN_HL = {
 var TRIG_APP = {
     title: "Trigonometry Helper App",
     date: "02/22 - 04/22",
-    desc: "A multi-page web application on trigonometry developed with Elm for 'CS1XD3 - Intro to Software Design Using Web Programming'. Led a team of 4 other students, assembled the final build and independently developed the quiz section, integrating a diagram generation feature to foster enhanced user engagement and facilitate effective learning. Achieved a perfect score of 100%.",
+    desc: "A multi-page web application on trigonometry developed with Elm for 'CS1XD3 - Intro to Software Design Using Web Programming'. Led a team of 4 other students, assembled the final build and independently developed the quiz section, integrating a diagram generation feature to foster enhanced user engagement and facilitate effective learning. Achieved a perfect grade of 100%.",
     link_1: "Github",
     url_1: "https://github.com/GauravS43/Trigonometry-Helper",
     link_2: "Website",
@@ -89,7 +89,7 @@ var REAL_LAX = {
 var GNOME_HOMES = {
     title: "Gnome Homes",
     date: "12/19",
-    desc: "Worked in a team of five for the 'Spark Hackathon' to create a proposal for a potential sustainable and affordable small home. Proposal centered around...",
+    desc: "Collaborated with a team of five for the Spark Hackathon to create a proposal for a sustainable and affordable homes. Proposal centered around upgrading tiny houses with sustainable features and smart appliances to montior use of resources. Played a key role developing an app in MIT app inventor to display real-time information from the appliances, providing homeowners with insights on energy consumption, water usage, and other key metrics.",
     link_1: "",
     url_1: "",
     link_2: "",
