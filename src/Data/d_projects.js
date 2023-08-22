@@ -1,3 +1,4 @@
+import ppp_pic from "../Components/Images/packet_parade.png"
 import sf_pic from "../Components/Images/sf_vs.png"
 import pf_pic from "../Components/Images/pf_run.png"
 import man_pic from "../Components/Images/manga.png"
@@ -18,6 +19,17 @@ var sample_project = [
     img: "", 
 ]
 */
+
+var PPP = {
+    title: "Packet Parade",
+    date: "07/23 - 08/23",
+    desc: "Navigate the dangers of cyberspace in this immersive 3D platformer, developed in three weeks using Unity. Play as a network packet on a critical mission to deliver data in a series of 20+ meticulously designed levels. This digital realm seems to abide by unconventional physics, as players have the power to defy gravity by colliding with platforms, a mechanic that challenges them to uncover new routes and hidden secrets. Independently developed using C# and hosted on Itch.io, where it has currently amassed over 100 plays.",
+    link_1: "Github",
+    url_1: "https://github.com/GauravS43/packet-parade",
+    link_2: "Game",
+    url_2: "https://woahi.itch.io/packet-parade",
+    img: ppp_pic
+}
 
 var SF_RL = {
     title: "Street Fighter Reinforcement Learning",
@@ -79,7 +91,7 @@ var REAL_LAX = {
     title: "Real-Lax App",
     date: "08/20",
     desc: "Collaborated with a team of four for the Spark from Home Hackathon to develop a mock-up app to provide easily accessible mental health resources. Conducted extensive research on accessible app design to ensure a user-friendly experience. Independently created the app's design using Marvel.",
-    link_1: "Prototype",
+    link_1: "",
     url_1: "https://marvelapp.com/prototype/ejj63dh/screen/71856307",
     link_2: "",
     url_2: "",
@@ -98,4 +110,4 @@ var GNOME_HOMES = {
 }
 
 
-export { SF_RL, PF_VIS, MAN_HL, TRIG_APP, MARIO_FPS, REAL_LAX, GNOME_HOMES }
+export { PPP, SF_RL, PF_VIS, MAN_HL, TRIG_APP, MARIO_FPS, REAL_LAX, GNOME_HOMES }
