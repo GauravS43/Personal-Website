@@ -7,6 +7,8 @@ export function Modal({ display_state, hideModal }) {
         "Making a Website!",
         "Reinforcement Learning SF2",
         "Algorithms Galore",
+        "Revisiting Higher or Lower",
+        "Revisiting Pathfinding Visualizer",
     ];
 
     return (
@@ -73,6 +75,21 @@ export function Modal({ display_state, hideModal }) {
                             In addition to these substantial modifications, I made minor adjustments to the website's scalability. I anticipated scaling to be a much larger issue due to my lack of experience when initially working on this project. However, this wasn't true as my previous scaling implementations were nearly perfect, with only minor adjustments needed for tiny devices and ultrawide monitors.
                             <br></br><br></br>
                             Revisiting Manga Higher Lower has provided a sense of completion. Despite this, I didn't complete everything I set out to do. I originally wanted to update the dataset of manga acquired from web scraping MyAnimeList. However, I couldn't do so because of new restrictions against web scraping on MyAnimeList. Regardless, I am confident this website is finished because this version represents the best possible iteration of the project, and I am satisfied with its current state.
+                        </h3>
+                    }
+
+                    {
+                        display_state === 5 &&
+                        <h3>
+                            Unlike my earlier experience revisiting Manga Higher Lower, I dreaded doing the same to Pathfinding Visualizer. I view it as a far more ambitious project, especially considering I did not know any pathfinding algorithms when I first made it. Due to this, I did not use the best data structures in some cases. Notably, the node graph lacks an adjacency matrix, relying instead on a function to determine neighbouring nodes. Despite these shortcomings, I was happy that the core logic behind each algorithm remained sound; I did not make any mistakes in implementations. Thus, as a part of this revisit, I decided not to alter any algorithm and instead opted to work on improving and fixing lacking features. This blog post delves into my experiences revisiting Pathfinding Visualizer, improving scaling, adding a tutorial, and fixing bugs.
+                            <br></br><br></br>
+                            Tackling scaling was one of my earliest concerns, as I recently worked on my personal website and ensured that it had proper scaling. It did not take long to realise that the visualizer's scaling was far from polished. While ultrawide resolutions held up well, narrower screens suffered from minimised elements, making it impossible for users to interact with some of the web app's features. After identifying the issues with scalings, I crafted a plan. I added two thresholds where the components would significantly change. If the width decreased to a point where menus started breaking, the advanced menu would no longer appear. Further reduction in size would cross another threshold, leading to a larger grid to compensate for the smaller screen. Ultimately, I removed many features for smaller displays due to the lack of an advanced menu. However, I think the user experience would suffer even more from the clunkiness of interacting with two menus and so many options on a small screen.
+                            <br></br><br></br>
+                            Adding a tutorial to the project was an idea I planned but never implemented due to other priorities, like bug fixing. Since the web app's original use was during a workshop on pathfinding algorithms for McMaster Game Development Club, I could explain the app's many features to users. However, given that users can use the app in other contexts, I created a tutorial on the README file in the project's GitHub far after I finished the project. With this foundation, creating a tutorial proved relatively straightforward. From past experiences, I quickly decided to use modals to deliver the tutorial, as it wouldn't interfere with any of the existing components. The only additions between the README file and the implemented tutorial are additional GIFs to be more engaging. Ultimately, I consider the new tutorial very valuable, helping users fully understand the app's features and how to use them.
+                            <br></br><br></br>
+                            My last goal for this revisit was to fix the bugs that users brought to my attention during the workshop demo. The cause of most bugs was users spamming or pressing a button before an animation had been completed. For example, if a user pressed the run button while the app showed the nodes selected from a prior pathfinding calculation, another animation would overlap, ruining both pathfinding outcomes. Similar issues arose when users manipulated the node graph by placing walls mid-animation. I resolved these problems by disabling user interactions with the node graph and certain buttons during animations. Fortunately, my existing animation flags streamlined the bug-fixing process.
+                            <br></br><br></br>
+                            While revisiting this project was not my most anticipated task, I take pride in the substantial strides I made to enhance its quality. Like my Manga Higher or Lower project, I consider this project to be in its best state after this revisit. Furthermore, I firmly believe this reflective process of scrutinizing, improving, and documenting my work has contributed to my growth as a developer and look forward to applying what I've learned in my future projects.
                         </h3>
                     }
                 </div>

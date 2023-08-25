@@ -22,4 +22,10 @@ let man_post = [
     "Manga Higher or Lower was my first experience working with React. Because of this, I anticipated encountering numerous flaws upon revisiting the project. Yet, to my surprise, my code has held up better than expected. In this blog post, I will discuss my experience of revisiting Manga Higher or Lower, implementing difficulties, improving and solving minor issues."
 ]
 
-export { website_post, sf_rl_post, ml_post, man_post }
+let pf_vis_post = [
+    "Revisiting Pathfinding Vis.",
+    "07/23",
+    "Unlike my earlier experience revisiting Manga Higher Lower, I dreaded doing the same to Pathfinding Visualizer. I view it as a far more ambitious project, especially considering I did not know any pathfinding algorithms when I first made it. This blog post delves into my experiences revisiting Pathfinding Visualizer, improving scaling, adding a tutorial, and fixing bugs."
+]
+
+export { pf_vis_post, website_post, sf_rl_post, ml_post, man_post }
