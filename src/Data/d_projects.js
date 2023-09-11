@@ -43,7 +43,7 @@ var SF_RL = {
 }
 
 var PF_VIS = {
-    title: "Path Finding Visualizer",
+    title: "Pathfinding Visualizer",
     date: "08/22",
     desc: "Compare different pathfinding algorithms in this interactive website independently developed using React.  Seven prominent pathfinding algorithms are featured, including Dijkstra, A Star (A*), Depth First Search (DFS) and Breadth First Search (BFS). Additionally, the user can generate mazes, place walls, or manipulate weights,  enabling a comprehensive understanding of the strengths and weaknesses of each algorithm. This website was prominently used in a seminar titled \"Enemy AI and Pathfinding\" for McMaster's Game Development Club.",
     link_1: "Github",
